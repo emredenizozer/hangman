@@ -9,16 +9,6 @@ import (
 	"unicode"
 )
 
-var dictionary = []string{
-	"Godfather",
-	"House of Cards",
-	"Snowfall",
-	"The Lord of the Rings",
-	"Star Wars",
-	"The Eternal Sunshine of the Spotless Mind",
-	"Friends",
-}
-
 func main() {
 	targetWord := getRandomWord()
 	guessedLetters := initializeGuessedWords(targetWord)
@@ -29,7 +19,7 @@ func main() {
 		input := readInput()
 
 		if len(input) != 1 {
-			fmt.Println("Invalid input. Only a single character is allowed")
+			fmt.Println("Invalid input. Only a single character is allowed!")
 			continue
 		}
 
